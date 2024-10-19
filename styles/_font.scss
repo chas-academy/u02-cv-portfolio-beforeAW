@@ -1,7 +1,13 @@
-h1{
-    font-family:'Times New Roman', Times, serif;
-}
+//Font Varibles
+//fontfamily:
 
-h2{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+$fontFamilyMain: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$fontFamilySecond: 'Times New Roman', Times, serif;
+$fontFamilyThird: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+//fontSize:
+
+$fontSizeMain: 20px;
+$fontSizeSecond: 16px;
+$fontSizeThird: 14px;
+$fontSizeForth: 12px;

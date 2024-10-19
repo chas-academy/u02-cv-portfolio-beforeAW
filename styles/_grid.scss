@@ -1,0 +1,24 @@
+
+.grid-content-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 'information information about';
+    align-items: baseline;
+}
+
+.grid-information-container {
+    grid-area: information;
+}
+
+.grid-about-container {
+    grid-area: about;
+}
+
+@media screen and (max-width:765px) {
+    .grid-content-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 'about'
+        'information';
+    }
+
+}
