@@ -1,78 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Albin Wrebo @ before AW</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Albin Wrebo</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-
-<body class="container">
-    <header class="content-container">
-        <p>albin.wrebo@beforeaw.dev</p>
-    </header>
-    <main class="content-container">
-        <div class="grid-content-container">
-            <section class="grid-information-container">
-                <h1>Hey, I'm Albin Wrebo</h1>
-                <h2>Currently studying Fullstack Open Source at Chas Academy</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra scelerisque odio, non rutrum
-                    libero pellentesque sit amet. Etiam id molestie mi</p>
-            </section>
-            <section class="grid-about-container" id="about">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra scelerisque odio, non rutrum
-                    libero pellentesque sit amet. Etiam id molestie mi.</p>
-                <ul>
-                    <li>albin.wrebo@outlook.com</li>
-                    <li>(+46) 070 559 04 27</li>
-                    <li>
-                        <h3>@<em>before</em><strong>AW</strong></h3>
-                    </li>
-                </ul>
-            </section>
-        </div>
-        <section>
-            <h3>Projects made by me:</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porta consectetur libero, at
-                malesuada leo eleifend ultrices. Aenean tempor congue viverra. Donec mattis cursus elementum. Nunc ut
-                accumsan nibh. Suspendisse lectus nisi, tempus et neque eu, volutpat iaculis ante. Pellentesque
-                vehicula, eros ut tempus tempor, nibh nibh convallis mauris, a iaculis felis ligula eget velit.
-                Suspendisse tempor turpis vitae lorem ornare ultricies. Donec sit amet tempus augue. Fusce iaculis urna
-                leo. Mauris a nulla sed diam lobortis congue. Donec luctus nunc vel lectus varius, at lacinia nunc
-                elementum. Sed dignissim varius sem at bibendum.
-
-                Fusce blandit sit amet lacus a sollicitudin. Pellentesque fringilla ex vitae tempus viverra. Morbi
-                ultrices libero sit amet elit viverra sodales. Aenean in maximus neque, ac imperdiet ligula. Cras nec
-                porta justo. Ut faucibus tellus eget ex tincidunt aliquam. Ut vehicula enim nibh, id malesuada elit
-                egestas ac. Nullam in tellus tincidunt, vulputate felis nec, iaculis orci. Mauris in laoreet dolor.
-                Mauris molestie odio a convallis iaculis. Nulla vehicula arcu enim, id pulvinar purus interdum quis.
-                Morbi lacus lacus, feugiat volutpat gravida eu, mollis vel diam. Phasellus et volutpat neque. Duis sed
-                blandit velit. Sed tempus, lectus ut aliquet lobortis, elit nibh dignissim nulla, vitae laoreet quam sem
-                ut felis. Nam commodo porta volutpat.
-
-                Fusce quis nisl nunc. Nulla justo turpis, ultricies consectetur erat nec, interdum tincidunt ipsum.
-                Fusce feugiat gravida dui, imperdiet cursus dui volutpat sit amet. Class aptent taciti sociosqu ad
-                litora torquent per conubia nostra, per inceptos himenaeos. Integer gravida tincidunt felis ut
-                venenatis. Etiam gravida nunc eros, et pharetra sem bibendum id. Etiam ultricies nisi non mi lobortis,
-                sed gravida tortor dapibus. Aliquam non massa sit amet lacus pharetra aliquet. Quisque interdum bibendum
-                odio, ut venenatis felis sagittis in. Integer in diam viverra sapien fringilla ullamcorper quis et nunc.
-                In diam mauris, molestie ut urna at, aliquam fringilla orci.
-
-                Pellentesque iaculis commodo erat in gravida. Proin diam augue, ultricies id ex vel, dictum finibus
-                odio. Pellentesque eu dui dictum mauris consequat pulvinar. Donec aliquam consequat interdum. Praesent
-                auctor quam nulla, id elementum lorem ultrices non. Class aptent taciti sociosqu ad litora torquent per
-                conubia nostra, per inceptos himenaeos. Cras sed nisi ut augue tristique faucibus. Ut tristique faucibus
-                porta. In suscipit fermentum velit, ut viverra est imperdiet quis. Morbi tincidunt, diam eget feugiat
-                mollis, ipsum nibh pharetra tortor, a maximus augue purus at quam.</p>
+  <body class="flex">
+    <div>
+      <div class="width grid g-navbar">
+        <header class="g-h">header</header>
+        <nav class="g-n">nav</nav>
+      </div>
+    </div>
+    <div class="width">
+      <main>
+        <section class="grid g-2obj">
+          <article class="g-pre">1</article>
+          <article class="g-pic">2</article>
         </section>
-    </main>
-    <nav class="content-container">
-        <a>About Me</a><strong>|</strong><a>Knowledge</a><strong>|</strong><a>Projects</a>
-    </nav>
-    <footer class="content-container">
-        <h3>Made by Albin Wrebo</h3>
-    </footer>
-</body>
-
+        <section>
+          <h3>about me</h3>
+          <div class="grid g-3">
+            <article>
+              <figure><img src="Media/Pictures/tech-img.png" alt="tech"></figure>
+              <h4>the tech</h4>
+            </article>
+            <article>
+              <figure><img src="Media/Pictures/scout-img.png" alt="scout"></figure>
+              <h4>the scout</h4>
+            </article>
+            <article>
+              <figure><img src="Media/Pictures/music-img.png" alt="musician"></figure>
+              <h4>the musican</h4>
+            </article>
+          </div>
+        </section>
+        <section>
+          <h3>skills</h3>
+          <div class="grid g-3">
+            <article>
+              <table>
+                <tbody>
+                  <tr>
+                    <td><figure><img src="Media/Pictures/html-img-o.png" alt="Html5"></figure></td>
+                    <td><figure><img src="Media/Pictures/html-img-o.png" alt="Html5"></figure></td>
+                    <td><figure><img src="Media/Pictures/html-img-o.png" alt="Html5"></figure></td>
+                  </tr>
+                  <tr>
+                    <td><figure><img src="Media/Pictures/html-img-o.png" alt="Html5"></figure></td>
+                    <td><figure><img src="Media/Pictures/html-img-o.png" alt="Html5"></figure></td>
+                    <td><figure><img src="Media/Pictures/html-img-o.png" alt="Html5"></figure></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+            <article>
+              <table>
+                <tbody>
+                  <tr>
+                    <td><figure><img src="Media/Pictures/html-img-o.png" alt="Html5"></figure></td>
+                    <td><figure><img src="Media/Pictures/html-img-o.png" alt="Html5"></figure></td>
+                    <td><figure><img src="Media/Pictures/html-img-o.png" alt="Html5"></figure></td>
+                  </tr>
+                  <tr>
+                    <td><figure><img src="Media/Pictures/html-img-o.png" alt="Html5"></figure></td>
+                    <td><figure><img src="Media/Pictures/html-img-o.png" alt="Html5"></figure></td>
+                    <td><figure><img src="Media/Pictures/html-img-o.png" alt="Html5"></figure></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+            <article>
+              <table>
+                <tbody>
+                  <tr>
+                    <td><figure><img src="Media/Pictures/html-img-o.png" alt="Html5"></figure></td>
+                    <td><figure><img src="Media/Pictures/html-img-o.png" alt="Html5"></figure></td>
+                    <td><figure><img src="Media/Pictures/html-img-o.png" alt="Html5"></figure></td>
+                  </tr>
+                  <tr>
+                    <td><figure><img src="Media/Pictures/html-img-o.png" alt="Html5"></figure></td>
+                    <td><figure><img src="Media/Pictures/html-img-o.png" alt="Html5"></figure></td>
+                    <td><figure><img src="Media/Pictures/html-img-o.png" alt="Html5"></figure></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+        </section>
+        <section>
+          <h3>Projects</h3>
+          <div class="grid g-3">
+            <article></article>
+            <article></article>
+            <article></article>
+          </div>
+        </section>
+        <section>
+          <h3>Contact me</h3>
+          <article>
+            <form>
+              <input type="text" id="name" value="Name" /><br /><br />
+              <input type="text" id="email" value="Email" /><br /><br />
+              <input type="text" id="subject" value="Subject" /><br /><br />
+              <textarea name="message" rows="10" cols="30">Message</textarea
+              ><br /><br />
+              <input type="submit" value="Submit" />
+            </form>
+          </article>
+        </section>
+      </main>
+      <footer>footer</footer>
+    </div>
+  </body>
 </html>
