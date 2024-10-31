@@ -1,0 +1,238 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: inherit;
+  /*vertical-align: baseline; */
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url("/Media/Pictures/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover;
+  color: white;
+  background-color: #28282B;
+  text-align: left;
+}
+
+.gradient {
+  background: linear-gradient(0deg, rgba(40, 40, 43, 0) 25%, rgba(255, 255, 255, 0.75) 100%);
+}
+
+.blk-100 {
+  background-color: #28282b;
+}
+
+.blk-75 {
+  background-color: rgba(40, 40, 43, 0.75);
+}
+
+.wt-75 {
+  background-color: rgba(237, 237, 242, 0.75);
+}
+
+.t-blk-100 {
+  color: #28282b;
+}
+
+.t-or-75 {
+  color: rgba(254, 102, 1, 0.75);
+}
+
+section {
+  margin: 2.4rem 0rem;
+  padding: 2rem;
+  border-radius: 2rem 0rem;
+}
+
+form {
+  margin: auto;
+  align-content: center;
+}
+
+table {
+  margin: auto;
+  border-spacing: 2rem;
+}
+
+th, td {
+  padding: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 2.4rem;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+h2, h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+h3 {
+  margin: 0rem;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.6rem;
+  margin: 2.4rem;
+}
+
+.t-c {
+  text-align: center;
+}
+
+img {
+  margin: auto;
+  padding-top: 2.4rem;
+}
+
+header {
+  margin: 2.4rem 0rem;
+}
+
+footer {
+  margin: 1rem;
+}
+
+nav {
+  margin: 2.4rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.g-h {
+  grid-area: head;
+}
+
+.g-n {
+  grid-area: nav;
+}
+
+.g-navbar {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.4rem;
+  grid-template-areas: "head head nav";
+}
+
+.g-pre {
+  grid-area: press;
+  align-content: center;
+}
+
+.g-pic {
+  grid-area: picture;
+}
+
+.g-2obj {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.4rem;
+  grid-template-areas: "press press picture";
+}
+
+.g-3 {
+  grid-template-columns: auto auto auto;
+  gap: 2.4rem;
+  justify-content: space-around;
+}
+
+.width {
+  width: 1128px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.presenter {
+  padding: 0rem;
+}
+
+.content {
+  width: 280px;
+  height: 316px;
+  margin-bottom: 2rem;
+  align-items: center;
+  align-content: center;
+}
+
+.pic {
+  width: 360px;
+  height: 437px;
+}
+
+.j-c {
+  justify-content: center;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,37 @@
+.grid{
+    display:grid;
+}
+
+.g-h{
+    grid-area: head;
+}
+.g-n{
+    grid-area: nav;
+}
+
+.g-navbar{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap:2.4rem;
+    grid-template-areas: "head head nav";
+}
+
+.g-pre{
+    grid-area: press;
+    align-content: center;
+}
+
+.g-pic{
+    grid-area: picture;
+}
+
+.g-2obj{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap:2.4rem;
+    grid-template-areas: "press press picture"; 
+}
+
+.g-3{
+    grid-template-columns: auto auto auto;
+    gap: 2.4rem;
+    justify-content: space-around;
+}

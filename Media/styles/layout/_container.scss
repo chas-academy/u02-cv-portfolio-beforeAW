@@ -1,0 +1,30 @@
+.width{
+    width: 1128px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.presenter{
+    padding:0rem;
+}
+
+.content {
+    width: 280px;
+    height: 316px;
+    margin-bottom: 2rem;
+    align-items: center;
+    align-content: center;
+}
+
+.pic {
+    width: 360px;
+    height: 437px;
+}
+
+.j-c{
+    justify-content: center;
+}
