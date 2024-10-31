@@ -154,6 +154,12 @@ img {
   padding-top: 2.4rem;
 }
 
+.p-pic {
+  margin: 2rem;
+  padding-top: 0rem;
+  border-radius: 1rem 0rem;
+}
+
 header {
   margin: 2.4rem 0rem;
 }
@@ -229,8 +235,13 @@ nav {
 }
 
 .pic {
-  width: 360px;
+  width: 320px;
   height: 437px;
+}
+
+.corner-1-3 {
+  padding: 2rem;
+  border-radius: 2rem 0rem;
 }
 
 .j-c {
