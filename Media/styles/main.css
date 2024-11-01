@@ -57,7 +57,7 @@ html {
 }
 
 body {
-  background-image: url("/Media/Pictures/background.jpg");
+  background-image: url("../Pictures/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top;
