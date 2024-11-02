@@ -8,6 +8,13 @@
     align-content: center;
     align-items: center;
 }
+.flex-r{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+
+}
 .presenter{
     padding:0rem;
 }
@@ -32,3 +39,19 @@
 .j-c{
     justify-content: center;
 }
+
+.fixed{
+    position: fixed;
+}
+
+ @media screen and (max-width: 1130px) and (min-width: 761px){
+    .width{
+        width: 776px;
+    }
+ }
+ @media screen and (max-width: 760px){
+    .width{
+        width: 360px;
+    }
+ }
+

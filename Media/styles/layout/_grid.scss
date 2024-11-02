@@ -4,8 +4,9 @@
 
 .g-h{
     grid-area: head;
+    padding-left: 2rem;
 }
-.g-n{
+    .g-n{
     grid-area: nav;
 }
 
@@ -34,4 +35,40 @@
     grid-template-columns: auto auto auto;
     gap: 2.4rem;
     justify-content: space-around;
+}
+
+@media screen and (max-width: 760px){
+    .g-navbar {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      gap: 1.2rem;
+      grid-template-areas: "head" "nav";
+      justify-content: space-around;
+    }
+    .g-2obj {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      grid-template-areas: "picture" "press";
+      justify-content: space-around;
+    }
+    .g-3 {
+      grid-template-columns: auto;
+      gap: 2.4rem;
+      justify-content: space-around;
+    }
+}
+  @media screen and (max-width: 1130px) and (min-width: 761px) {
+    .g-navbar {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.2rem;
+      grid-template-areas: "head nav";
+      justify-content: space-around;
+    }
+    .g-2obj {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-areas: "press picture";
+    }
+    .g-3 {
+      grid-template-columns: auto auto;
+      gap: 2.4rem;
+      justify-content: space-around;
+    }
 }

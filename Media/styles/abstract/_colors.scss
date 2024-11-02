@@ -1,10 +1,10 @@
 
 .gradient{
-    background: linear-gradient(0deg, rgba(40,40,43,0) 25%, rgba(255,255,255,0.75) 100%);
+    background: linear-gradient(0deg, rgba(40,40,43,0) 5%, rgba(255,255,255,0.75) 100%);
 }
 
 .blk-100{
-    background-color: rgba($color: #28282B, $alpha: 1);
+    background-color: rgba($color: #28282b, $alpha: 1);
 }
 .blk-75{
     background-color: rgba($color: #28282B, $alpha: 0.75);
@@ -13,9 +13,16 @@
     background-color: rgba($color: #EDEDF2, $alpha: 0.75);
 }
 
+.or-75{
+    background-color: rgba($color: #FE6601, $alpha: 0.75);
+}
+
 .t-blk-100{
     color: rgba($color: #28282B, $alpha: 1);
 }
 .t-or-75{
     color: rgba($color: #FE6601, $alpha: 0.75);
+}
+.b-sha{
+    box-shadow: 8px 4px 8px rgba($color: #28282b, $alpha: 0.75);
 }
