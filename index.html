@@ -11,11 +11,11 @@
 <body>
   <div class="flex" id="top">
     <div class="width fixed">
-      <div class="width grid g-navbar blk-100 fixed">
-        <header class="g-h"><a href="#top"><img src="Media/Icons/Logo.svg" alt=""></a></header>
-        <nav class="g-n flex-r"><a href="#about" class="nav-b or-75">About</a><a href="#skill"
-            class="nav-b or-75">Skill</a><a href="#project" class="nav-b or-75">Projects</a><a href="#contact"
-            class="nav-b or-75">Contact</a>
+      <div class="width grid g-navbar fixed blk-100">
+        <header class="g-h"><a href="#top" aria-label="back to top"><img src="Media/Icons/Logo.svg" alt=""></a></header>
+        <nav class="g-n flex-r"><a href="#about" class="nav-b wt-75">About</a><a href="#skill"
+            class="nav-b wt-75">Skill</a><a href="#project" class="nav-b wt-75">Projects</a><a href="#contact"
+            class="nav-b wt-75">Contact</a>
         </nav>
       </div>
     </div>
@@ -39,7 +39,8 @@
                 <div class="flex-r j-c"><a href="https://www.linkedin.com/in/albin-wrebo-94233996/" target="_blank">
                     <figure><img src="Media/Icons/linkedin.svg" alt="LinkedIn"></figure>
                   </a>
-                  <figure><img src="Media/Icons/slash.svg" alt="slash"></figure><a href="https://github.com/beforeAW"  target="_blank">
+                  <figure><img src="Media/Icons/slash.svg" alt="slash"></figure><a href="https://github.com/beforeAW"
+                    target="_blank">
                     <figure><img src="Media/Icons/github-small.svg" alt="github"></figure>
                   </a>
                 </div>
@@ -174,10 +175,14 @@
           <div class="flex">
             <div class="content flex j-c">
               <form action="mailto:albin.wrebo@outlook.com" method="post" enctype="text/plain">
-                <input type="text" id="name" value="Name"><br><br>
-                <input type="text" id="email" value="Email"><br><br>
-                <input type="text" id="subject" value="Subject"><br><br>
-                <textarea id="text" name="textarea" rows="5" cols="31">Message</textarea><br><br>
+                <label for="name">Name:</label>
+                <input type="text" id="name"><br><br>
+                <label for="email">Mail:</label>
+                <input type="text" id="email"><br><br>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject"><br><br>
+                <label for="text">Message:</label>
+                <textarea id="text" name="textarea" rows="5" cols="31"></textarea><br><br>
                 <input type="submit" value="Send" class="sub-b or-75">
               </form>
             </div>
