@@ -216,8 +216,6 @@ a {
 /*header*/
 header {
   margin: 0rem 0rem 2.4rem 0rem;
-  z-index: 999;
-  overflow: hidden;
 }
 
 /*footer*/
