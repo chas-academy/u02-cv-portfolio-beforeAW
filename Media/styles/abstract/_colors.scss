@@ -1,4 +1,6 @@
+/*colors divided in classes the number on the class tells the transparancy*/
 
+/*background colors:*/
 .gradient{
     background: linear-gradient(0deg, rgba(40,40,43,0) 5%, rgba(255,255,255,0.75) 100%);
 }
@@ -16,7 +18,7 @@
 .or-75{
     background-color: rgba($color: #FE6601, $alpha: 0.75);
 }
-
+/*text-colors:*/
 .t-blk-100{
     color: rgba($color: #28282B, $alpha: 1);
 }

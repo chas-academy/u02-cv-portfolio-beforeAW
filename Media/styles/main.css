@@ -1,3 +1,5 @@
+/*gets all partials*/
+/*forwards the partials to main*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -52,8 +54,10 @@ table {
   border-spacing: 0;
 }
 
+/*Main items*/
 html {
   font-size: 62.5%;
+  scroll-padding-top: 1px;
 }
 
 body {
@@ -71,93 +75,8 @@ main {
   margin-top: 14rem;
 }
 
-.gradient {
-  background: linear-gradient(0deg, rgba(40, 40, 43, 0) 5%, rgba(255, 255, 255, 0.75) 100%);
-}
-
-.blk-100 {
-  background-color: #28282b;
-}
-
-.blk-75 {
-  background-color: rgba(40, 40, 43, 0.75);
-}
-
-.wt-75 {
-  background-color: rgba(237, 237, 242, 0.75);
-}
-
-.or-75 {
-  background-color: rgba(254, 102, 1, 0.75);
-}
-
-.t-blk-100 {
-  color: #28282b;
-}
-
-.t-or-75 {
-  color: rgba(254, 102, 1, 0.75);
-}
-
-.b-sha {
-  box-shadow: 8px 4px 8px rgba(40, 40, 43, 0.75);
-}
-
-@media screen and (max-width: 760px) {
-  main {
-    margin-top: 22rem;
-  }
-}
-@media screen and (max-width: 760px) {
-  .scr-mar {
-    scroll-margin-top: 22rem;
-  }
-}
-@media screen and (max-width: 1130px) and (min-width: 761px) {
-  .width {
-    width: 776px;
-  }
-}
-@media screen and (max-width: 760px) {
-  .width {
-    width: 360px;
-  }
-}
-@media screen and (max-width: 760px) {
-  .g-navbar {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    gap: 1.2rem;
-    grid-template-areas: "head" "nav";
-    justify-content: space-around;
-  }
-  .g-2obj {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    grid-template-areas: "picture" "press";
-    justify-content: space-around;
-  }
-  .g-3 {
-    grid-template-columns: auto;
-    gap: 2.4rem;
-    justify-content: space-around;
-  }
-}
-@media screen and (max-width: 1130px) and (min-width: 761px) {
-  .g-navbar {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.2rem;
-    grid-template-areas: "head nav";
-    justify-content: space-around;
-  }
-  .g-2obj {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-areas: "press picture";
-  }
-  .g-3 {
-    grid-template-columns: auto auto;
-    gap: 2.4rem;
-    justify-content: space-around;
-  }
-}
+/*forwards the partials to main*/
+/*Section layouts and margins:*/
 section {
   margin: 2.4rem 0rem;
   padding: 2rem;
@@ -181,6 +100,14 @@ input {
   border-radius: 0.5rem 0rem;
 }
 
+textarea {
+  width: 100%;
+  padding: 0.1rem;
+  border-radius: 0.5rem 0rem;
+  font-style: inherit;
+}
+
+/*layout for tables:*/
 table {
   margin: auto;
   border-spacing: 2rem;
@@ -190,6 +117,7 @@ th, td {
   padding: 1rem;
 }
 
+/*Text, font family and sizes*/
 h1,
 h2,
 h3,
@@ -228,6 +156,7 @@ p {
   text-align: center;
 }
 
+/* Layout for img and videos:*/
 img {
   margin: auto;
   padding-top: 2.4rem;
@@ -239,17 +168,43 @@ img {
   border-radius: 1rem 0rem;
 }
 
+video {
+  width: 280px;
+  margin: auto;
+  padding-top: 1rem;
+}
+
+/*layout for links*/
 .nav-b {
   width: 64px;
-  height: 32px;
+  height: 24px;
+  margin: auto;
+  padding: 0rem;
+  padding-top: 0.8rem;
+  border-radius: 1rem 0rem;
+  color: #28282b;
+  font-size: 1.6rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+.nav-b:hover {
+  color: rgba(237, 237, 242, 0.75);
+}
+
+.sub-b {
+  width: 48px;
+  height: 24px;
   margin: auto;
   padding: 0rem;
   border-radius: 1rem 0rem;
   color: #28282b;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-align: center;
 }
 
-.nav-b:hover {
+.sub-b:hover {
   color: rgba(237, 237, 242, 0.75);
 }
 
@@ -257,14 +212,20 @@ a {
   margin: auto;
 }
 
+/*forwards the partials to main*/
+/*header*/
 header {
   margin: 0rem 0rem 2.4rem 0rem;
+  z-index: 999;
+  overflow: hidden;
 }
 
+/*footer*/
 footer {
   margin: 1rem;
 }
 
+/*navbar*/
 nav {
   width: 360px;
   margin: 2.4rem 0rem;
@@ -272,6 +233,7 @@ nav {
   align-content: center;
 }
 
+/*gridbox classes*/
 .grid {
   display: grid;
 }
@@ -312,6 +274,7 @@ nav {
   justify-content: space-around;
 }
 
+/*Containers and layout classes flexboxes included here*/
 .width {
   width: 1128px;
 }
@@ -358,8 +321,58 @@ nav {
 
 .fixed {
   position: fixed;
+  z-index: 1000;
 }
 
+/*forwards the partials to main*/
+/*colors divided in classes the number on the class tells the transparancy*/
+/*background colors:*/
+.gradient {
+  background: linear-gradient(0deg, rgba(40, 40, 43, 0) 5%, rgba(255, 255, 255, 0.75) 100%);
+}
+
+.blk-100 {
+  background-color: #28282b;
+}
+
+.blk-75 {
+  background-color: rgba(40, 40, 43, 0.75);
+}
+
+.wt-75 {
+  background-color: rgba(237, 237, 242, 0.75);
+}
+
+.or-75 {
+  background-color: rgba(254, 102, 1, 0.75);
+}
+
+/*text-colors:*/
+.t-blk-100 {
+  color: #28282b;
+}
+
+.t-or-75 {
+  color: rgba(254, 102, 1, 0.75);
+}
+
+.b-sha {
+  box-shadow: 8px 4px 8px rgba(40, 40, 43, 0.75);
+}
+
+/*media querys*/
+/*margin changes:*/
+@media screen and (max-width: 760px) {
+  main {
+    margin-top: 22rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  .scr-mar {
+    scroll-margin-top: 22rem;
+  }
+}
+/*Size changes:*/
 @media screen and (max-width: 1130px) and (min-width: 761px) {
   .width {
     width: 776px;
@@ -368,5 +381,41 @@ nav {
 @media screen and (max-width: 760px) {
   .width {
     width: 360px;
+  }
+}
+/*grid changes:*/
+@media screen and (max-width: 760px) {
+  .g-navbar {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1.2rem;
+    grid-template-areas: "head" "nav";
+    justify-content: space-around;
+  }
+  .g-2obj {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-areas: "picture" "press";
+    justify-content: space-around;
+  }
+  .g-3 {
+    grid-template-columns: auto;
+    gap: 2.4rem;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 1130px) and (min-width: 761px) {
+  .g-navbar {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.2rem;
+    grid-template-areas: "head nav";
+    justify-content: space-around;
+  }
+  .g-2obj {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas: "press picture";
+  }
+  .g-3 {
+    grid-template-columns: auto auto;
+    gap: 2.4rem;
+    justify-content: space-around;
   }
 }/*# sourceMappingURL=main.css.map */

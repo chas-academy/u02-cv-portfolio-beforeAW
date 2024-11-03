@@ -1,13 +1,40 @@
+/*layout for links*/
+
 .nav-b{
     width: 64px;
-    height: 32px;
+    height: 24px;
     margin: auto;
     padding: 0rem;
+    padding-top: 0.8rem;
     border-radius: 1rem 0rem;
     color: rgba($color: #28282B, $alpha: 1);
     font-size: 1.6rem;
+    text-decoration: none;
+    text-align: center;
+
 }
 
 .nav-b:hover{
     color: rgba($color: #EDEDF2, $alpha: 0.75)
+}
+
+.sub-b{
+    width: 48px;
+    height: 24px;
+    margin: auto;
+    padding: 0rem;
+    border-radius: 1rem 0rem;
+    color: rgba($color: #28282B, $alpha: 1);
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.sub-b:hover{
+    color: rgba($color: #EDEDF2, $alpha: 0.75)
+}
+
+a {
+    margin: auto;
 }

@@ -1,3 +1,5 @@
+/* Layout for img and videos:*/
+
 img{
     margin: auto;
     padding-top: 2.4rem;
@@ -7,4 +9,11 @@ img{
     margin: 2rem;
     padding-top: 0rem;
     border-radius: 1rem 0rem;
+}
+
+video{
+    width: 280px;
+    margin: auto;
+    padding-top: 1rem;
+
 }

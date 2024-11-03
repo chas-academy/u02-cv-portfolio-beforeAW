@@ -1,4 +1,5 @@
-
+/*media querys*/
+/*margin changes:*/
 @media screen and (max-width: 760px){
     main{
         margin-top: 22rem;
@@ -10,7 +11,7 @@
         scroll-margin-top: 22rem;
     }
 }
-
+/*Size changes:*/
 @media screen and (max-width: 1130px) and (min-width: 761px){
     .width{
         width: 776px;
@@ -21,7 +22,7 @@
         width: 360px;
     }
  }
-
+/*grid changes:*/
  @media screen and (max-width: 760px){
     .g-navbar {
       grid-template-columns: repeat(1, minmax(0, 1fr));
